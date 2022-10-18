@@ -9,6 +9,6 @@ message Packet {
     oneof payload {
         Heartbeat heartbeat = 2;
         Movement movement = 3;
-        Result result = 4;
+        response.Result result = 4;
     }
 }

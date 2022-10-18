@@ -1,10 +1,10 @@
 syntax = "proto3";
 
-package result;
+package response;
 
 enum StatusCode {
-    OK = 0;
-    Error = 1;
+    ok = 0;
+    error = 1;
 }
 
 message Result {
