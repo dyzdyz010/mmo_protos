@@ -3,12 +3,14 @@ syntax = "proto3";
 import "Heartbeat.proto";
 import "Movement.proto";
 import "Result.proto";
+import "EnterScene.proto";
 
 message Packet {
     int64 id = 1;
     oneof payload {
         Heartbeat heartbeat = 2;
         Movement movement = 3;
-        response.Result result = 4;
+        EnterScene enter_scene = 4;
+        response.Result result = 5;
     }
 }
