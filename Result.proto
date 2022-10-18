@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package result;
+
+enum StatusCode {
+    OK = 0;
+    Error = 1;
+}
+
+message Result {
+    int64 packet_id = 1;
+    StatusCode status_code = 2;
+    map<string, string> payload = 3;
+}

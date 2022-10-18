@@ -2,11 +2,13 @@ syntax = "proto3";
 
 import "Heartbeat.proto";
 import "Movement.proto";
+import "Result.proto";
 
 message Packet {
     int64 id = 1;
     oneof payload {
         Heartbeat heartbeat = 2;
         Movement movement = 3;
+        Result result = 4;
     }
 }
