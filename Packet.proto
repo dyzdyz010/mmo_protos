@@ -7,10 +7,11 @@ import "EnterScene.proto";
 
 message Packet {
     int64 id = 1;
+    int64 timestamp = 2;
     oneof payload {
-        Heartbeat heartbeat = 2;
-        Movement movement = 3;
-        EnterScene enter_scene = 4;
-        response.Result result = 5;
+        Heartbeat heartbeat = 3;
+        Movement movement = 4;
+        EnterScene enter_scene = 5;
+        response.Result result = 6;
     }
 }
