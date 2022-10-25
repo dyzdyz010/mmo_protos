@@ -1,17 +1,17 @@
 syntax = "proto3";
 
 import "Heartbeat.proto";
-import "Movement.proto";
 import "Result.proto";
 import "EnterScene.proto";
 import "TimeSync.proto";
+import "EntityAction.proto";
 
 message Packet {
     int64 id = 1;
     int64 timestamp = 2;
     oneof payload {
         Heartbeat heartbeat = 3;
-        Movement movement = 4;
+        entity.EntityAction entity_action = 4;
         EnterScene enter_scene = 5;
         response.Result result = 6;
         TimeSync time_sync = 7;
