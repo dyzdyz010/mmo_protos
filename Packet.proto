@@ -1,7 +1,7 @@
 syntax = "proto3";
 
 import "Heartbeat.proto";
-import "Result.proto";
+import "Reply.proto";
 import "EnterScene.proto";
 import "TimeSync.proto";
 import "EntityAction.proto";
@@ -13,7 +13,7 @@ message Packet {
         Heartbeat heartbeat = 3;
         entity.EntityAction entity_action = 4;
         EnterScene enter_scene = 5;
-        response.Result result = 6;
+        reply.Result result = 6;
         TimeSync time_sync = 7;
     }
 }
