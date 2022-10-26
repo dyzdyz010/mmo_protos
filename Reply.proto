@@ -23,7 +23,8 @@ message PlayerInfo {
 }
 
 message EnterScene {
-    repeated PlayerInfo entities = 1;
+    entity.Vector location = 1;
+    repeated PlayerInfo entities = 2;
 }
 
 message EntityMovementInfo {
