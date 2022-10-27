@@ -11,6 +11,6 @@ message EnterScene {
 message EntityAction {
   oneof action {
     EnterScene enter_scene = 1;
-    Movement movement = 2;
+    types.Movement movement = 2;
   }
 }

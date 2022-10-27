@@ -19,14 +19,14 @@ message Result {
 
 message PlayerInfo {
     int64 cid = 1;
-    Vector location = 2;
+    types.Vector location = 2;
 }
 
 message EnterScene {
-    Vector location = 1;
+    types.Vector location = 1;
 }
 
 message EntityMovementInfo {
     int64 cid = 1;
-    Movement movement = 2;
+    types.Movement movement = 2;
 }

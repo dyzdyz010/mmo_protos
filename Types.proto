@@ -1,5 +1,7 @@
 syntax = "proto3";
 
+package types;
+
 message Movement {
   Vector location = 1;
   Vector velocity = 2;

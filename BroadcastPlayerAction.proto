@@ -6,18 +6,18 @@ package broadcast.player;
 
 message PlayerEnter {
     int64 cid = 1;
-    Vector location = 2;
+    types.Vector location = 2;
 }
 
 message PlayerLeave {
     int64 cid = 1;
-    Vector location = 2;
+    types.Vector location = 2;
 }
 
 message Action {
   int64 cid = 1;
   oneof action {
-    Movement movement = 2;
+    types.Movement movement = 2;
     PlayerEnter player_enter = 3;
     PlayerLeave player_leave = 4;
   }
