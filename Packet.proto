@@ -4,6 +4,7 @@ import "Heartbeat.proto";
 import "Reply.proto";
 import "TimeSync.proto";
 import "EntityAction.proto";
+import "BroadcastPlayerAction.proto";
 
 message Packet {
     int64 id = 1;
