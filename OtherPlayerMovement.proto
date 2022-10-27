@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-import "Movement.proto";
-
-message OtherPlayerMovement {
-    int64 cid = 1;
-    Vector location = 2;
-    Vector velocity = 3;
-}
