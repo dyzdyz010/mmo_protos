@@ -1,8 +1,0 @@
-syntax = "proto3";
-
-import "Movement.proto";
-
-message EnterScene {
-    int64 cid = 1;
-    Vector location = 2;
-}

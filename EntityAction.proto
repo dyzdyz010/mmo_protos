@@ -1,21 +1,16 @@
 syntax = "proto3";
 
+import "Types.proto";
+
 package entity;
 
-message Movement {
-  Vector location = 1;
-  Vector velocity = 2;
-  Vector acceleration = 3;
-}
-
-message Vector {
-  float x = 1;
-  float y = 2;
-  float z = 3;
+message EnterScene {
+  int64 cid = 1;
 }
 
 message EntityAction {
   oneof action {
-    Movement movement = 1;
+    EnterScene enter_scene = 1;
+    Movement movement = 2;
   }
 }
