@@ -5,20 +5,24 @@ import "Types.proto";
 package broadcast.player;
 
 message PlayerEnter {
-    int64 cid = 1;
-    types.Vector location = 2;
+  int64 cid = 1;
+  types.Vector location = 2;
 }
 
 message PlayerLeave {
-    int64 cid = 1;
-    types.Vector location = 2;
+  int64 cid = 1;
+  types.Vector location = 2;
+}
+
+message PlayerMove {
+  int64 cid = 1;
+  types.Movement movement = 2;
 }
 
 message Action {
-  int64 cid = 1;
   oneof action {
-    types.Movement movement = 2;
-    PlayerEnter player_enter = 3;
-    PlayerLeave player_leave = 4;
+    PlayerEnter player_enter = 1;
+    PlayerLeave player_leave = 2;
+    PlayerMove player_move = 3;
   }
 }
