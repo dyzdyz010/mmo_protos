@@ -14,6 +14,7 @@ message Result {
     StatusCode status_code = 2;
     oneof payload {
         EnterScene enter_scene = 3;
+        PlayerMove player_move = 4;
     };
 }
 
@@ -26,7 +27,7 @@ message EnterScene {
     types.Vector location = 1;
 }
 
-message EntityMovementInfo {
+message PlayerMove {
     int64 cid = 1;
-    types.Movement movement = 2;
+    types.Vector location = 2;
 }

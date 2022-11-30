@@ -18,6 +18,11 @@ message PlayerMove {
   types.Movement movement = 2;
 }
 
+message PlayerJump {
+  int64 cid = 1;
+  types.Movement movement = 2;
+}
+
 message Action {
   oneof action {
     PlayerEnter player_enter = 1;
